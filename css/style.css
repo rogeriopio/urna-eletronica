@@ -1,0 +1,174 @@
+@keyframes pisca {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    border: 1px solid rgb(201, 213, 28);
+    display: flex;
+}
+/* tela */
+.tela {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+.d-1 {
+    flex: 1;
+    display: flex;
+}
+.d-1-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.d-1-1 {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+.d-1-2 {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-1-3 {
+    height: 50px;
+    display: flex;
+}
+.numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.56rem;
+}
+
+.pisca {
+    animation: pisca 1s linear infinite;
+}
+.d-1-4 {
+    flex: 1;
+    line-height: 1.6rem;
+}
+.d-1-right {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.d-1-image {
+    border: 1px solid #000;
+    background: white;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.d-1-image img {
+    width: 100%;
+}
+.d-1-image.small {
+    width: 80%;
+    font-size: 0.7rem;
+}
+.d-2 {
+    height: 50px;
+    font-size: 0.92rem;
+    border-top: 2px solid #000;
+    padding-left: 10px;
+}
+/* teclado */
+.teclado {
+    background-color: #403a3a;
+    border: 1px solid rgb(8, 120, 16);
+    margin-left: 30px;
+}
+
+.teclado-btn {
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 1.56rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #555;
+}
+.teclado--linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.btn-branco {
+    background: white;
+    color: black;
+    font-size: 0.94rem;
+}
+
+.btn-corrige {
+    background-color: #f09046;
+    color: black;
+    font-size: 0.94rem;
+}
+.btn-confirma {
+    background-color: #48c079;
+    color: black;
+    font-size: 0.94rem;
+    width: 90px;
+    height: 50px;
+}
+
+.aviso--grande {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+.verde {
+    color: #48c079;
+}
+.nulo {
+    color: #555;
+}
+.aviso--gigante {
+    height: 320px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-weight: bold;
+}
